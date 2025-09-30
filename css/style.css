@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+.header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.header-logo {
+  width: 320px;    /* 例：幅約320px */
+  height: auto;
+  display: block;
+  margin: 40px 70% 60px 20%;
+}
+
+.header-main {
+    width: 100%;
+  height: auto;
+  display: block;
+   object-fit: cover;  
+margin-bottom: 80px;
+}
+.arrows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px; /* 三角の間隔 */
+  margin: 40px 0;
+}
+
+.arrows span {
+  width: 0;
+  height: 0;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-top: 26px solid #000; /* 色は黒 */
+}
+.about,
+.works,
+.contact {
+    width: 900px;
+    margin: 0 auto;
+}
+.about__heading, 
+.works__heading,
+.contact__heading {
+    border-bottom: #000 1px dotted;
+    margin-bottom: 50px;
+}
+.about__title,
+.works__title,
+.contact__title {
+    font-size: 28px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.about__avatar {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+.about__avatar-image {
+    border-radius: 50%;
+    width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+.about__text {
+    display: flex;
+   flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+
+}
+.about__name {
+    font-size: 18px;
+}
+.about__description {
+    font-size: 16px;
+    line-height: 1.2;
+}
+ .works__gallery {
+  display: flex;
+  justify-content: space-between; /* 3つを均等に並べる */
+  gap: 2rem; /* 余白を追加する場合 */
+}
+.works__link {
+  display: block;           /* リンク全体をブロック化してクリック範囲を画像全体に */
+}
+.works__card {
+  flex: 1;           /* 均等幅 */
+  max-width: 16rem;  /* 最大幅を制限したい場合 */
+  text-align: center;
+}
+.works__item {
+    width: 100%;
+    height: 400px;
+    display: block;
+    transition: filter 0.3s ease; /* アニメーションで自然な変化 */
+    margin-top: 20px;
+}
+.works__link:hover .works__item {
+  filter: brightness(60%) contrast(1.1);
+  transition: filter 0.3s ease;
+}
+.works__caption {
+    font-size: 22px;
+    margin: 15px 0 50px 0;
+}
+.works__more {
+    margin-top: 20px;
+    margin-bottom: 50px;
+   text-align: center;
+}
+
+.works__cta-btn {
+    display: inline-block;
+  padding: 15px 100px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;  
+ transition: background-color 0.3s ease, transform 0.3s ease;
+  /* backgroundとtransformを0.3秒かけて変化 */
+}
+
+.works__cta-btn:hover {
+  background-color: #333;     /* 少し明るい黒にして視覚変化 */
+  transform: translateY(-4px);/* 上に4px浮かせる */
+}
+.contact__lead {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.contact__links a {
+    color: #000;
+}
+.footer {
+    width: 100%;
+}
+.footer__inner {
+    background-color: #000;
+    color: #fff;
+    display: flex;              
+  flex-direction: column;   
+  justify-content: center;  
+  align-items: center;         
+  text-align: center;          
+    padding: 70px 0 50px 0; 
+    margin-top: 70px;
+}
+.footer__logo {
+    width: 320px;    /* 例：幅約320px */
+  height: auto;
+
+}
+.footer__copy {
+    font-size: 10px;
+    margin: 15px 0;
+}
+
